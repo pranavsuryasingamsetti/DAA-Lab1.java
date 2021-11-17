@@ -1,0 +1,32 @@
+import java.util.Scanner;
+import static
+java.lang.Math.sqrt;
+class Main
+{
+ public static void main(String args[])
+ {
+ Scanner sc=new
+Scanner(System.in);
+System.out.println("Enter how many
+sets"); int n=sc.nextInt();
+int [] p1=new int[2];
+ System.out.println("Enter the
+points of p1"); for(int i=0;i<2;i++){
+p1[i]=sc.nextInt();
+ }
+ int []
+p2=new int[2]; 
+ System.out.println("Enter the points of
+p2"); for(int j=0;j<2;j++)
+ {
+p2[j]=sc.nextInt();
+ } int
+a=p1[0]-p2[0];
+int b=p1[1]-p2[1];
+int c=a*a; int
+d=b*b; int
+e=c+d; double
+f=sqrt(e);
+ System.out.println("The Distance between 2 points is "+f);
+ }
+}
